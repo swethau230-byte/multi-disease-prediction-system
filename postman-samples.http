@@ -1,0 +1,77 @@
+### Register
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Demo User",
+  "email": "demo@example.com",
+  "password": "password123"
+}
+
+### Login
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "demo@example.com",
+  "password": "password123"
+}
+
+### Heart Prediction
+POST http://localhost:8080/api/predictions/heart
+Content-Type: application/json
+Authorization: Bearer PASTE_TOKEN_HERE
+
+{
+  "patientName": "Patient One",
+  "gender": "Female",
+  "age": 58,
+  "bloodPressure": 145,
+  "cholesterol": 250,
+  "heartRate": 105,
+  "chestPain": 2
+}
+
+### Diabetes Prediction
+POST http://localhost:8080/api/predictions/diabetes
+Content-Type: application/json
+Authorization: Bearer PASTE_TOKEN_HERE
+
+{
+  "patientName": "Patient Two",
+  "gender": "Male",
+  "age": 48,
+  "glucose": 145,
+  "bmi": 31,
+  "insulin": 170,
+  "bloodPressure": 142,
+  "familyHistory": 1
+}
+
+### Liver Disease Prediction
+POST http://localhost:8080/api/predictions/liver
+Content-Type: application/json
+Authorization: Bearer PASTE_TOKEN_HERE
+
+{
+  "patientName": "Patient Three",
+  "gender": "Female",
+  "age": 45,
+  "bilirubin": 1.6,
+  "alkalinePhosphatase": 140,
+  "sgpt": 62,
+  "sgot": 48,
+  "albumin": 3.2
+}
+
+### History
+GET http://localhost:8080/api/history
+Authorization: Bearer PASTE_TOKEN_HERE
+
+### Dashboard
+GET http://localhost:8080/api/dashboard
+Authorization: Bearer PASTE_TOKEN_HERE
+
+### PDF Report
+GET http://localhost:8080/api/reports/pdf
+Authorization: Bearer PASTE_TOKEN_HERE

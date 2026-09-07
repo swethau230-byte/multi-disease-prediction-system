@@ -1,0 +1,29 @@
+{
+  "model_name": "nephrology",
+  "feature_columns": [
+    "age",
+    "bp",
+    "sg",
+    "al",
+    "su",
+    "bgr",
+    "bu",
+    "sc",
+    "sod",
+    "pot",
+    "hemo",
+    "pcv",
+    "wc",
+    "rc"
+  ],
+  "target_column": "target",
+  "metrics": {
+    "accuracy": 0.7833,
+    "precision": 0.7885,
+    "recall": 0.8283,
+    "f1_score": 0.8079,
+    "roc_auc": 0.8683
+  },
+  "n_train_samples": 720,
+  "n_test_samples": 180
+}
