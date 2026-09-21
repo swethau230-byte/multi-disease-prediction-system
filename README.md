@@ -7,6 +7,8 @@ Diseases included:
 - Heart Disease
 - Diabetes
 - Liver Disease
+- Kidney disease
+- brain tumor
 
 The implementation uses Java Spring Boot, Spring Security with JWT, Maven and MySQL. A separate static demo UI is also included in the final project zip for easy presentation without server setup.
 
