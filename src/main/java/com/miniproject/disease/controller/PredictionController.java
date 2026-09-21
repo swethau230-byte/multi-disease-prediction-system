@@ -21,6 +21,7 @@ public class PredictionController {
         this.predictionService = predictionService;
     }
 
+
     @PostMapping("/heart")
     public Prediction heart(@RequestBody Map<String, Object> request) {
         User user = currentUser.get();
